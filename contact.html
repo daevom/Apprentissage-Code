@@ -1,0 +1,63 @@
+<DOCTYPE html>
+    <html lang="fr">
+    
+    <head>
+      <meta charset="utf-8">
+      <meta name="description"  content="Restaurant sur Orléans avec pour spécialité les fruits de mer !">
+      <meta name="keywords" content="Restaurant,Orléans,Fruit de mer">
+    <title>LeFiasco, Nous contacter</title>
+    
+    </head>
+    <body>
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Accueil">Accueil</a></li>
+          <li><a href="menu.html" title="Menu">Menu</a></li>
+          <li><a href="contact.html" title="Contact">Conctact</a></li>
+        </ul>
+      </nav>
+    <h1>Nous contacter</h1>
+    <form action="contact.html">
+        <fieldset>
+            <legend>Nous contacter</legend>
+           <div> 
+            <label for="emailinput">Votre Email</label>
+            <input type="text" name="email" id="emailinput">
+        </div>
+        <div>
+            <label for="fileinput">Votre nom</label>
+            <input type="file" name="file" id="fileinput">
+        </div>
+        <div>
+            <label id="Genre">Genre</label>
+            <select name="Genre" id="Genre">
+                <option>Masculin</option>
+                <option>Féminin</option>
+            </select>
+        </div>
+        <div>
+            <label id="Animal">Animal préféré</label>
+            <select name="animal" id="animal">
+                <optgroup label="Mammifère">
+                    <option>Chien</option>
+                    <option>Chat</option>
+                </optgroup>
+                <optgroup label="Poisson">
+                    <option>Poisson Rouge</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="message" >Votre message</label>
+            <textarea name="message" id="message" rows="81" cols="343" placeholder="Votre message"></textarea>
+        </div>
+        <div>
+            <label><input type="checkbox" name="cgu">J'accepte les conditions d'utilisations</label>
+        </div>
+        <input type="submit" value="Envoyer un email">
+        <input type="reset" value="Annuler">
+        <button type="submit">Annuler</button>
+        </fieldset>
+    </form>
+    </body>
+    </html>
