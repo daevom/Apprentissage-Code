@@ -1,63 +1,49 @@
-<DOCTYPE html>
-    <html lang="fr">
-    
-    <head>
-      <meta charset="utf-8">
-      <meta name="description"  content="Restaurant sur Orléans avec pour spécialité les fruits de mer !">
-      <meta name="keywords" content="Restaurant,Orléans,Fruit de mer">
-    <title>LeFiasco, Nous contacter</title>
-    
-    </head>
-    <body>
-      <nav>
-        <ul>
-          <li><a href="index.html" title="Accueil">Accueil</a></li>
-          <li><a href="menu.html" title="Menu">Menu</a></li>
-          <li><a href="contact.html" title="Contact">Conctact</a></li>
-        </ul>
-      </nav>
-    <h1>Nous contacter</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil Restaurant LeFiasco, sur Orléans</title>
+    <meta name="description" content="Texte décrivant le restaurant">
+</head>
+
+<body>
+    <header>
+        <h1>LeFiasco, Contact</h1>
+        <nav>
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="menu.html" title="Voir le menu">Menu</a>
+            <a href="contact.html" title="Nous contacter">Contact</a>
+        </nav>
+        <img src="img/lefiascobanniere.jpg" alt="Bannière restaurant LeFiasco" width="1260" height="366">
+    </header>
+    <section>
+    <p>
+        <h2>Où nous trouver</h2><br>
+        129 Rue de la Démonstration<br>
+        45000 Orléans<br>
+        France
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.770167688543!2d1.9003882154610447!3d47.90213357550901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e4d4396eefe3%3A0xb4577bf491e0fdf7!2s2%20Rue%20des%20Minimes%2C%2045000%20Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1595102809184!5m2!1sfr!2sfr" width="1200" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <h2>Nous envoyer un mail</h2>
     <form action="contact.html">
-        <fieldset>
-            <legend>Nous contacter</legend>
-           <div> 
-            <label for="emailinput">Votre Email</label>
-            <input type="text" name="email" id="emailinput">
+        <div>
+            <label for="email">Votre email </label>
+            <input type="email" required id="email" name="email" placeholder="Votre email">
         </div>
         <div>
-            <label for="fileinput">Votre nom</label>
-            <input type="file" name="file" id="fileinput">
+            <label for="firstname">Votre prénom </label>
+            <input type="text" required id="firstname" name="firstname">
         </div>
         <div>
-            <label id="Genre">Genre</label>
-            <select name="Genre" id="Genre">
-                <option>Masculin</option>
-                <option>Féminin</option>
-            </select>
+            <label for="message">Votre message </label>
+            <textarea name="message" id="message" required></textarea>
         </div>
-        <div>
-            <label id="Animal">Animal préféré</label>
-            <select name="animal" id="animal">
-                <optgroup label="Mammifère">
-                    <option>Chien</option>
-                    <option>Chat</option>
-                </optgroup>
-                <optgroup label="Poisson">
-                    <option>Poisson Rouge</option>
-                </optgroup>
-            </select>
-        </div>
-        <div>
-            <label for="message" >Votre message</label>
-            <textarea name="message" id="message" rows="81" cols="343" placeholder="Votre message"></textarea>
-        </div>
-        <div>
-            <label><input type="checkbox" name="cgu">J'accepte les conditions d'utilisations</label>
-        </div>
-        <input type="submit" value="Envoyer un email">
-        <input type="reset" value="Annuler">
-        <button type="submit">Annuler</button>
-        </fieldset>
+        <button type="submit">Envoyer votre email</button>
     </form>
-    </body>
-    </html>
+    </section>
+    <footer>
+        <address>129 Rue de la Démonstration</address>
+    </footer>
+    
+</body>
+</html>
